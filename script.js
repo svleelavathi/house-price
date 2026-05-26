@@ -4,9 +4,8 @@ function predictPrice() {
     let bedrooms = document.getElementById("bedrooms").value;
     let age = document.getElementById("age").value;
 
-    // Simple fake linear regression formula
-    let price = (size * 200) + (bedrooms * 10000) - (age * 5000);
+    let price = (size * 180) + (bedrooms * 12000) - (age * 4000);
 
     document.getElementById("result").innerText =
-        "Predicted Price: ₹ " + price;
+        "🏠 Estimated Price: ₹ " + price;
 }
